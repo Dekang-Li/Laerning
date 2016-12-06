@@ -1,0 +1,759 @@
+@charset "utf-8";
+/* CSS Document */
+html,
+body {
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+body,
+h1,
+form {
+	margin: 0;
+}
+a,
+input,
+button {
+	-webkit-appearance: none;
+}
+input,
+button {
+	border-radius: 5px;
+	outline: none;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+body {
+	background: #f7fcf6;
+}
+#header {
+	/*width: ;*/
+	position: relative;
+	height: 1.68rem;
+	font: .36rem/.64rem Helvetica;
+	box-sizing: border-box; 
+	background: #fcba01;
+}
+.menuBtn {
+	position: absolute;
+	width: 1.68rem;
+	height: 1.68rem;
+	left: 0;
+	top: 0;
+	background: url(../img/icon2.gif) no-repeat .56rem .28rem;
+	background-size: 9.73rem 1rem;
+}
+.refreshBtn {
+	position: absolute;
+	width: 1.68rem;
+	height: 1.68rem;
+	right: 0;
+	top: 0;
+	background: url(../img/icon2.gif) no-repeat -1.18rem .24rem ;
+	background-size: 9.73rem 1rem;
+}
+#header .menu {
+	display: inline-block;
+	color: #25230f;
+	padding: 1rem 0 0 .54rem;
+}
+#header .cart {
+	display: inline-block;
+	color: #25230f;
+	padding: 1rem 0 0 .36rem;
+}
+#header .search {
+	position: relative;
+	margin-left: 1.8rem;
+	padding-top: .28rem;
+}
+#header .search .text {
+	width: 10.2rem;
+	height: 1.12rem;
+	border-radius: .4rem;
+	font: .48rem/1.1rem helvetica;
+	padding-left: 1.1rem;
+	border: none;
+}
+#header .search .sousuo {
+	position: absolute;
+	width: .98rem;
+	height: 1.16rem;
+	left: .12rem;
+	top: .38rem;
+	border: none;
+	background: url(../img/icon2.gif) no-repeat -2.93rem .28rem;
+	background-size: 9.73rem 1rem;
+}
+.scroll {
+	position: absolute;
+	left: 0;
+	top: 1.68rem;
+	bottom: 0;
+	/*height: 25rem;*/
+	overflow: auto;
+}
+.PPT {
+	width: 15rem;
+	height: 6.12rem;
+	background-size: cover;
+}
+.PPT .img {
+	width: 15rem;
+	height: 6.12rem;
+}
+#list {
+	height: 5.83rem;
+	padding-bottom: .458rem;
+	border-bottom: 2px solid #f0f0f0;
+}
+#list li {
+	position: relative;
+	float: left;
+	width: 2.96rem;
+	height: 2.917rem;
+	font: .5rem/.58rem helvetica;
+}
+#list li a {
+	position: absolute;
+	width: 3rem;
+	height: 2.3rem;
+	left: 0;
+	top: 0;
+	color: #707070;
+	/*background: url(img/classify.gif) no-repeat .708rem .5rem;
+	background-size: 1.58rem 1.58rem;*/
+}
+#list li img {
+	width: 1.58rem;
+	height: 1.58rem;
+	padding: .5rem 0 .25rem .708rem;
+}
+#list li span {
+	display: block;
+	text-align: center;
+}
+
+
+/*苏宁头条*/
+
+
+.headerline .hleft {
+	position: relative;
+	width: 2.917rem;
+}
+.headerline .hleft span {
+	position: absolute;
+	width: 2.917rem;
+	height: 1rem;
+	left: 0;
+	top: .5625rem;
+	background: url(../img/icon2.gif) no-repeat -3.94rem 0;
+	background-size: 9.73rem 1rem;
+}
+.headerline .line {
+	float: left;
+	width: 2px;
+	height: .79rem;
+	margin: .67rem .79rem .625rem 3.247rem;
+	background: #ddd;
+}
+.headerline .hright {
+	display: inline-block;
+	font: .5rem/.625rem helvetica;
+	width: 10rem;
+	height: 1.25rem;
+	padding: .396rem 0 .4375rem 0;
+}
+.headerline .hright .news {
+	color: #4a4b49;
+}
+.hright .news .p {
+	padding-left: .4375rem;
+	position: relative;
+}
+.hright .news .dot {
+	position: absolute;
+	width: .19rem;
+	height: .1875rem;
+	left: 0;
+	top: .2rem;
+	background: url(../img/icon2.gif) no-repeat -6.854rem 0;
+	background-size: 9.73rem 1rem;
+}
+.hright .news .span2 {
+	color: #999;
+}
+
+.bline {
+	width: 15rem;
+	height: .5rem;
+	background: #f0f0f0;
+}
+
+/*掌上抢*/
+
+.plam {
+	/*height: 6.79rem;*/
+}
+.plam .Pheader {
+	height: 1.58rem;
+}
+.plam .Pheader .Pleft {
+	position: relative;
+	width: 3.125rem;
+}
+.Pheader .Pleft .Plogo {
+	position: absolute;
+	width: 2.71rem;
+	height: 1rem;
+	left: .42rem;
+	top: .33rem;
+	background: url(../img/icon2.gif) no-repeat -7.02rem 0;
+	background-size: 9.73rem 1rem;
+}
+.plam .Pheader .Pcenter {
+	float: left;
+	width: 7rem;
+	padding-left: 3.52rem;
+}
+.Pheader .Pcenter span {
+	font: .417rem/.417rem helvetica;
+}
+.Pheader .Pcenter .Pchang {
+	display: inline-block;
+	font: .417rem/1.25rem helvetica;
+	padding-top: .33rem;
+	color: #fd4d49;
+}
+.Pheader .Pcenter .Ptime {
+	display: inline-block;
+	font: .417rem/.417rem helvetica;
+	padding: .1rem;
+	border: 2px solid #000;
+	border-radius: 3px;
+}
+.Pheader .Pcenter .Ptime1 {
+	color: #fd4d49;
+	border-color: #fd4d49;
+}
+.Pheader .Pright {
+	float: right;
+}
+.Pheader .Pright a {
+	display: block;
+	height: 1.58rem;
+	font: .375rem/.71rem helvetica;
+	padding: 0 .21rem;
+}
+.Pheader .Pright .miaosha {
+	float: left;
+	display: block;
+	background: #fcba01;
+	font: .375rem/.71rem helvetica;
+	padding: 0 .2rem;
+	border-radius: .25rem;
+	color: #614920;
+	margin: .6rem .2rem 0 0;
+}
+.Pheader .Pright .jiantou {
+	float: right;
+	display: block;
+	font: 1rem/1rem helvetica;
+	color: #614920;
+	margin: .45rem .2rem 0 0;
+}
+.plam .Pul {
+	width: 14rem;
+	margin: 0 auto;
+}
+.plam .Pul .Pli {
+	float: left;
+	width: 4rem;
+	margin: 0 .25rem .45rem;
+}
+.Pul .Pli img {
+	width: 3.9rem;
+	height: 3.29rem;
+	border: 2px solid #ddd;
+}
+.Pul .Pli div {
+	position: relative;
+	width: 3.9rem;
+	height: 1.36rem;
+	background: #ddd;
+	margin-left: 2px;
+	margin-top: -2px;
+}
+.Pli div .xianjia {
+	display: block;
+	font: .42rem/.75rem helvetica;
+	color: #df0b13;
+	margin-left: .48rem;
+}
+.Pli div .yuanjia {
+	display: block;
+	font: .29rem/.42rem helvetica;
+	color: #aaa;
+	margin-left: .48rem;
+	text-decoration: line-through;
+}
+/*.Pli div .zhe {
+	position: absolute;
+	width: 1.46rem;
+	height: 1.54rem;
+	right: .05rem;
+	top: -.125rem;
+	background-size: 1.46rem 1.45rem;
+}
+.Pli div .zhe1 {
+	background: url(../img/zhe1.gif) no-repeat;
+	background-size: 1.46rem 1.45rem;
+}
+.Pli div .zhe2 {
+	background: url(../img/zhe2.gif) no-repeat;
+	background-size: 1.46rem 1.45rem;
+}
+.Pli div .zhe3 {
+	background: url(../img/zhe3.gif) no-repeat;
+	background-size: 1.46rem 1.45rem;
+}*/
+.Pli .PLdiv .zhe {
+	display: block;
+	margin-top: -1.26rem;
+	margin-left: 2.5rem;
+}
+.Pli .PLdiv img {
+	width: 1.3rem;
+	height: 1.45rem;
+	border: none;
+}
+
+
+
+.box .top {
+	width: 15rem;
+}
+.box .top img {
+	width: 15rem;
+	height: 4.04rem;
+}
+.box .bottom {
+	width: 15rem;
+	height: 5.79rem;
+}
+.bottom .bleft {
+	float: left;
+	width: 7.5rem;
+}
+.bottom .bleft img {
+	width: 7.5rem;
+	height: 5.79rem;
+}
+.bottom .bright {
+	float: left;
+	width: 7.5rem; 
+}
+.bright .brtop img {
+	width: 7.5rem;
+	height: 2.92rem;
+}
+.bright .brbottom img {
+	width: 7.5rem;
+	height: 2.87rem;
+}
+.list li {
+	float: left;
+	width: 3.7rem;
+}
+.list li img {
+	width: 3.7rem;
+	height: 6.04rem;
+}
+
+
+/*超实惠*/
+
+
+
+.substantial .Sheader img {
+	width: 15rem;
+	height: 1.21rem;
+}
+.Scontent .SCHleft {
+	float: left;
+}
+.Scontent .SCHleft img {
+	width: 7.54rem;
+	height: 5.875rem;
+}
+.Scontent .SCHright {
+	float: left;
+}
+.Scontent .SCHright img {
+	width: 7.46rem;
+	height: 2.937rem;
+}
+.SCfooter .SCFleft {
+	float: left;
+}
+.SCfooter .SCFleft img {
+	width: 7.54rem;
+	height: 2.875rem;
+}
+.SCfooter .SCFright {
+	float: left;
+}
+.SCfooter .SCFright img {
+	width: 7.46rem;
+	height: 2.875rem;
+}
+
+
+
+
+
+/*生活家*/
+
+
+.life .Lheader img{
+	width: 15rem;
+	height: 1.21rem;
+}
+.Ltop .LTleft {
+	float: left;
+}
+.Ltop .LTleft img {
+	width: 7.5rem;
+	height: 6.04rem;
+}
+.Ltop .LTright {
+	float: left;
+}
+.Ltop .LTright img {
+	width: 7.5rem;
+	height: 6.04rem;
+}
+.life .Lfooter li {
+	float: left;
+	width: 3.75rem;
+}
+.Lfooter li img {
+	width: 3.75rem;
+	height: 6.04rem;
+}
+
+
+/*好品质*/
+
+
+.quality .Qheader img {
+	width: 15rem;
+	height: 1.21rem;
+}
+.Qtop .QTleft {
+	float: left;
+}
+.Qtop .QTleft img {
+	width: 7.54rem;
+	height: 5.875rem;
+}
+.Qtop .QTright {
+	float: left;
+}
+.Qtop .QTright img {
+	width: 7.46rem;
+	height: 2.937rem;
+}
+.Qfooter .QFleft {
+	float: left;
+}
+.Qfooter .QFleft img {
+	width: 7.54rem;
+	height: 2.875rem;
+}
+.Qfooter .QFright {
+	float: left;
+}
+.Qfooter .QFright img {
+	width: 7.46rem;
+	height: 2.875rem;
+}
+
+
+.ad {
+	width: 100%;
+}
+.ad img {
+	width: 15rem;
+	height: 4rem;
+}
+
+
+
+/*特色好货*/
+
+.feature .Fheader img {
+	width: 15rem;
+	height: 1.21rem;
+}
+.Ftop .FTleft {
+	float: left;
+}
+.Ftop .FTleft img {
+	width: 7.5rem;
+	height: 5.875rem;
+}
+.Ftop .FTright {
+	float: left;
+}
+.Ftop .FTright img {
+	width: 7.5rem;
+	height: 2.937rem;
+}
+.feature .Ffooter li {
+	float: left;
+	width: 7.5rem;
+}
+.Ffooter li img {
+	width: 7.5rem;
+	height: 2.875rem;
+}
+
+
+
+/*热门市场*/
+
+
+.hot .Hheader img {
+	width: 15rem;
+	height: 1.21rem;
+}
+.Htop .HTleft {
+	float: left;
+	width: 7.5rem;
+}
+.Htop .HTleft img {
+	width: 7.5rem;
+	height: 6.04rem;
+}
+.Htop .HTright {
+	float: left;
+	width: 7.5rem;
+}
+.Htop .HTright img {
+	width: 7.5rem;
+	height: 6.04rem;
+}
+.Hfooter li {
+	float: left;
+	width: 5rem;
+}
+.Hfooter li img {
+	width: 5rem;
+	height: 4.8rem;
+}
+
+
+/*苏宁金融*/
+
+
+.bank .Bheader img {
+	width: 15rem;
+	height: 1.21rem;
+}
+.Btop .BTleft {
+	float: left;
+}
+.Btop .BTleft img {
+	width: 7.54rem;
+	height: 5.875rem;
+}
+.Btop .BTright {
+	float: left;
+}
+.Btop .BTright img {
+	width: 7.46rem;
+	height: 2.937rem;
+}
+.bank .Bfooter {
+	width: 14.58rem;
+	margin: 0 auto;
+}
+.bank .Bfooter li {
+	float: left;
+	width: 6.875rem;
+	padding: .206rem;
+}
+.Bfooter li img {
+	width: 6.875rem;
+	height: 10rem;
+}
+
+
+
+
+/*好店推荐*/
+
+.discover {
+	padding-bottom: 1.21rem;
+}
+.discover .Dheader img {
+	width: 15rem;
+	height: 1.21rem;
+}
+.discover .Dcontent {
+	width: 14.58rem;
+	margin: 0 auto;
+}
+.discover .Dcontent a {
+	float: left;
+	display: block;
+	width: 6.87rem;
+	padding: 0 .21rem;
+}
+.discover .Dcontent .Dtop {
+	display: block;
+	width: 6.87rem;
+}
+.Dcontent .Dtop img {
+	width: 6.87rem;
+	height: 2.58rem;
+	margin-bottom: 1px;
+}
+.discover .Dcontent .DBleft {
+	float: left;
+	display: block;
+	width: 4.6rem;
+}
+.Dcontent .DBleft img {
+	width: 4.6rem;
+	height: 4.625rem;
+}
+.discover .Dcontent .DBr {
+	float: left;
+	display: block;
+	width: 2.27rem;
+}
+.Dcontent .DBr img {
+	width: 2.27rem;
+	height: 2.33rem;
+}
+
+
+/*猜你喜欢*/
+
+
+.live .Vheader img {
+	width: 15rem;
+	height: 1.375rem;
+}
+.live .recommend {
+	font: .5rem/1.125rem helvetica;
+	padding-bottom: .21rem;
+	color: #fcba01;
+	text-align: center;
+}
+.live .Lcom {
+	width: 14.58rem;
+	margin: 0 auto;
+	background: #f0f0f0;
+}
+.live .Lcom li {
+	float: left;
+	width: 6.875rem;
+	padding: 0 0 .2rem;
+	margin-bottom: .42rem;
+	background: #fff;
+	margin: 0 .206rem .4rem;
+}
+.Lcom li img {
+	width: 6.875rem;
+	height: 6.92rem;
+}
+.Lcom .LC .jieshao {
+	display: block;
+	height: 1.5rem;
+	font: .5rem/.75rem helvetica;
+	color: #000;
+	padding: .125rem 0 0 .1875rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.Lcom .LC .jiage {
+	font: .5rem/.75rem helvetica;
+	color: #df0b13;
+	padding-left: .1875rem;
+}
+.Lcom .LC .xiangsi {
+	display: inline-block;
+	font: .5rem/.75rem helvetica;
+	color: #fcba01;
+	padding: .25rem .5rem .1875rem;
+	border: 2px solid #fcba01;
+	border-radius: .17rem;
+	margin-left: 1.5rem;
+}
+
+
+
+/*客户端下载*/
+
+
+.download .Oimg {
+	display: block;
+	width: 15rem;
+	height: 2.98rem;
+	left: 0;
+	top: 0;
+	background: url(../img/Oimg.gif) no-repeat;
+	background-size: 15rem 2.98rem;
+}
+
+
+
+.version {
+	font: .5rem/1.79rem helvetica;
+	color: #ddd;
+}
+.version li {
+	float: left;
+}
+.version li a {
+	display: inline-block;
+	width: 2.85rem;
+	font: .5rem/1.79rem helvetica;
+	text-align: center;
+	color: #282928;
+}
+
+
+
+.statement {
+	font: .5rem/1.5rem helvetica;
+	color: #838885;
+	text-align: center;
+	margin-bottom: 1.1rem;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,219 @@
+第一课：
+
+语言：
+
+html(Hypertexy Markup Language)      超文本标记语言     结构
+
+css(Cascading Style Sheets)          层叠样式表         样式
+
+js(Javascript)                                          行为
+
+工具：
+
+1.浏览器（IE浏览器，标准浏览器：chrome（谷歌） Firefox（火狐) safari(苹果) ） 
+
+  webkit  IE  内核
+ 
+  UC QQ 360 百度 搜狗 opera 世界之窗 猎豹 遨游 网景
+
+2.切图工具：PS /FW
+
+3.编辑器：DW HBuilder sublin 
+
+<!DOCTYPE html>               !文档的类型  html  文档声明
+
+<html>                        html的正文开始
+
+<head>                        头部  页面头信息
+
+<meta charset=utf-8" />       编码声明  （meta 页面副属性）
+
+<title>无标题文档</title>     标题  页面标题
+
+</head>
+
+<body>                        主题内容  页面的内容
+
+</body>
+
+</html>
+
+<html></html>标签对 双标签
+
+<meta />单标签
+
+所有标签要闭合
+
+<div></div>  块，区域
+
+标签的属性 属性名=“属性值”          <div 属性名=“属性值”></div> 
+
+1.行间样式：写在标签内部的style属性里   <div style="样式"></div>
+
+2.内部样式表：写在页面专门的style标签中  
+
+ id="idName"   #idName[元素的样式]  命名要求：不能用中文 不能以数字开始 
+
+3.外部样式表：写在独立的css标签中，通过link标签引入当前页面  <link href="css的地址" rel="stylesheet" />
+
+单位：像素（px）
+
+height高度
+
+width宽度
+
+border边框（复合样式 集合样式 每个样式之间以空格隔开） 
+
+border-width(边框宽度)   
+
+border-style（边框样式）:solid(实现) dashed（虚线） dotted（点线） 
+   
+border-color（边框颜色）
+
+css中常见的颜色模式：关键字（red green black...） rgb（）  三位或六位的十六进制数字
+
+border-width:（上 右 下 左） （上下 左右） （上 左右 下）
+
+border-top right bottom left：(10px solid black)(color style color)
+S
+border-top：none  上边框显示为无
+
+同一个标签相交的两个边框 相交的地方是斜线
+
+同样作用的样式 后面的会覆盖前面的
+              
+
+
+
+
+第二课：
+
+link 引入外部资源
+
+ href=“要引入当前页面的外部资源的路径“
+
+ rel=声明当前引入的文件类型 stylesheet 样式表
+
+路径（文件地址）
+
+ 绝对路径：本地绝对路径  -- 禁止使用
+           
+           线上绝对路径
+ 
+ 相对路径：（相对于当前文件的一个路径地址）
+
+            返回上一层目录 ../
+
+快捷键：
+
+ 新建文件：ctrl+n
+   
+ 保持文件：ctrl+s
+
+ 全选：ctrl+a
+
+div不设置宽度的时候，宽度跟着父级走
+
+div不设置高度的时候，高度可以由内容撑开
+
+background:背景 复合属性
+
+background-color：背景颜色
+
+background-image：url（图片地址）；   背景图
+
+background-repeat：背景图平铺 （-x 沿x轴平铺） （-y 沿y轴平铺） (no-repeat 不平铺） （repeat 默认）
+
+background-position：背景图位置
+
+	关键字
+
+	X：left图片左侧和元素的左侧对齐
+
+	   right图片右侧和元素的右侧对齐
+
+	   center图片的中间和元素的中间对齐
+
+	Y：top图片的顶部和元素的顶部对齐
+ 	
+	   bottom图片的底部和元素的底部对齐
+
+	   center图片的中间和元素的中间对齐
+
+	具体数值：（设置图片距离元素左上角的距离）
+
+	X:
+
+	  正值：从元素的左侧开始，从左向右运动
+
+	  负值：从元素的左侧开始，从右向左运动
+
+	Y：
+
+	  正值：从元素的顶部开始，从上向下运动
+
+	  负值：从元素的顶部开始，从下向上运动
+
+抠图：  
+
+	选取选中要切下来的区域
+	
+	复制 ctrl+c
+	
+	新建 ctrl+n
+	
+	复制 ctrl+v
+	
+	存储为web所需要的格式 shift+ctrl+alt+s
+
+
+
+
+第三课
+
+文字相关设置：
+
+	font-size: 文字大小
+
+	font-weight：文字加粗（normal正常 bold加粗 ）
+
+	font-family：文字字体
+
+	font-style：文字倾斜（normal正常 italic倾斜）
+
+	line-height：行高
+
+集合样式：font：bold italic 14px/30px “宋体”（固定形式：加粗（倾斜）  字体大小（必填项）/行高 字体（必填项））
+
+font-family:“主要字体”，“备选字体1”，“备选字体2”（如果用户电脑有主要字体，就显示主要字体，如果没有主要字体，那就显示备选字体1，如果用户电脑没有主要字体和备选字体1，则显示备选字体2）
+
+font-family:“英文字体”，"中文字体"
+
+英文字符显示使用英文字体，中文字符使用中文字体
+
+font:16px/1 Arial 行高是字体大小的一倍 
+
+color：文本颜色
+
+text-decoration（文本修饰）：line-through（删除线） overline（上划线） underline（下划线） none
+
+text-indent：首行缩进（单位：1em=一个文字大小）
+
+text-align（文本对齐方式）：center left right
+
+letter-spacing：字母间距/文字间距
+
+word-spacing：单词间距/词间距
+
+“宋体”情况下英文字符的宽度是字体大小的一般
+
+英文和数字没有结束的时候 不会词内断行
+
+word-break：词内断行（break-all：所有词都可以发生词内断行  break-strict  keep-all  ）
+
+
+
+
+
+
+   

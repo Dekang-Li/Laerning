@@ -1,0 +1,84 @@
+前端开发 前端开发工程师
+
+切页面
+代码的复用
+交互
+用户体验
+代码的加载速度
+各种终端的适配
+
+网页制作/切图仔/前台 
+做页面、切页面
+---------------------------------------------------------------
+产品经理(产品原型) -- UI(页面设计图) -- 前端开发(UI，后端) -- 后端开发 -- 测试 -- 上线发布
+---------------------------------------------------------------
+语言:
+ html（Hypertext Markup Language） -- 超文本标记语言 -- 结构
+ css (Cascading Style Sheets) -- 层叠样式表 -- 样式
+ js (javascript) -- 行为	
+--------------------------------------------------------------
+工具:
+浏览器：
+(IE浏览器(IE6,7,8,9,10,11) 标准浏览器: chrome谷歌浏览器，Firefox 火狐,safari 苹果)
+
+切图工具:PS
+
+编辑器: DW/HBuilder/...
+-------------------------------------------------------------
+<!doctype html> !文档的类型 html -- 文档声明 
+<html> -- html的正文开始
+<head> 头部 -- 页面头信息
+<meta charset="utf-8"> 编码声明
+<title>无标题文档</title> 标题 -- 页面标题
+</head>
+<body> 主体内容 -- 页面的内容
+</body>
+</html>
+-----------------------------------------------------------
+<html> 标记、标签
+<html></html> 标签对 双标签
+<meta /> 单标签
+-----------------------------------------------------------
+<div></div> 块,区域
+标签的属性 属性名="属性值"  <div 属性名="属性值"></div>
+
+行间样式--写在标签内部的style属性里  <div style="样式"></div>
+
+写在页面专门的style标签中 -- 内部样式表
+	id = "idName"  #idName{元素的样式}
+
+写在独立的css文件中，通过link标签引入当前页面 --外部样式表
+	<link href="css的地址" rel="stylesheet" />
+-------------------------------------------------------------
+单位：px（像素）
+width 宽度
+height 高度
+border 边框 (复合样式,集合样式 每个样式之间已空格隔开)
+border-width 边框宽度
+border-style 边框样式(solid 实线/dashed 虚线/dotted 点线)
+border-color 边框颜色
+	css中常用的颜色模式:
+		关键字(red,green,pink,blue,yellow,black...)
+		rgb();
+		三位或者六位的十六进制数字
+		0-9,0-f(0-9,a,b,c,d,e,f)
+border-top 上边框(复合样式,集合样式 每个样式之间已空格隔开)
+border-top-color
+border-top-style
+border-top-width
+
+border-right 右边框(复合样式,集合样式 每个样式之间已空格隔开)
+border-right-color
+border-right-style
+border-right-width
+
+border-bottom 下边框(复合样式,集合样式 每个样式之间已空格隔开)
+border-bottom-color
+border-bottom-style
+border-bottom-width
+
+border-left 左边框(复合样式,集合样式 每个样式之间已空格隔开)
+border-left-color
+border-left-style
+border-left-width
+

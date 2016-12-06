@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>无标题文档</title>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container">
+	<div class="table-responsive">
+		<table class="table table-striped table-bordered table-hover table-condensed" style="width:500px">
+			<thead>
+				<tr>
+					<th>表头</th>
+					<th>表头</th>
+					<th>表头</th>
+					<th>表头</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="danger">
+					<td>单元格</td>
+					<td>单元格</td>
+					<td>单元格</td>
+					<td>单元格</td>
+				</tr>
+				<tr>
+					<td>单元格</td>
+					<td>单元格</td>
+					<td>单元格</td>
+					<td>单元格</td>
+				</tr>
+				<tr>
+					<td>单元格</td>
+					<td>单元格</td>
+					<td>单元格</td>
+					<td>单元格</td>
+				</tr>
+				<tr>
+					<td>单元格</td>
+					<td>单元格</td>
+					<td>单元格</td>
+					<td>单元格</td>
+				</tr>
+				<tr>
+					<td>单元格</td>
+					<td>单元格</td>
+					<td>单元格</td>
+					<td>单元格</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>	
+</body>
+</html>

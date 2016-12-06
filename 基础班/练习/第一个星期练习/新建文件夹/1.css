@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+a {
+	font: 12px/25px "宋体";
+	color: #252525;
+    text-decoration: none;
+	margin-right: 10px;
+	white-space: nowrap;
+}
+#wrap {
+	width: 300px;
+	border-top: 2px solid #206f96;
+	font-size: 0px;
+}
+	#mainbody{
+		border: 1px solid #cfcfcf;
+		border-top: none;
+}
+		#header {
+			font: 14px/28px "宋体";
+			color: #252525;
+			border-bottom: 1px solid #cfcfcf;
+			padding-left: 9px;
+			background: url(img/header.png) repeat-x;
+}
+		#div1 {
+	 		background: url(img/div1.png) no-repeat 16px 25px;
+			padding: 19px 0px 13px 50px;
+}
+		#div2 {
+			background: #f7f7f7 url(img/div2.png) no-repeat 9px 51px;
+			padding: 13px 0px 13px 50px;
+}
+		#div2-2 {
+			margin-right: 0;
+}
+		#div3 {
+			background: url(img/div3.png) no-repeat 15px 25px;	
+			padding: 13px 0px 13px 50px;
+}
+		#div3-2 {
+			font-family: Arial;
+}
+        #div4 {
+			background: #f7f7f7 url(img/div4.png) no-repeat 12px 49px;	
+			padding: 13px 0px 14px 50px;
+}

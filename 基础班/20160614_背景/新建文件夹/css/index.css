@@ -1,0 +1,39 @@
+@charset "utf-8";
+/*css document*/
+#box {
+	width: 300px;
+	border-top: 2px solid #206f96;
+}
+
+	#content {
+		border: 1px solid #cfcfcf;
+		border-top: none;
+}
+		#con1 {
+			height: 29px;
+			background: url(../img/header.gif);
+			border-top: none;
+		}
+		#con2 {
+			height: 57px;
+			border-top:none;
+			background:url(../img/con1.gif) no-repeat 16px 25px;
+		}
+		#con3 {
+			height: 126px;
+			border-top: none;
+			background: #f7f7f7 url(../img/con2.gif) no-repeat 9px 51px;
+		}
+		#con4 {
+			height: 76px;
+			border-top: none;
+			background: url(../img/con3.gif) no-repeat 15px 25px;
+		}
+		#con5 {
+			height: 127px;
+			border-top: none;
+			background: #f7f7f7 url(../img/con4.gif) no-repeat 12px 49px;
+		}
+
+
+	
