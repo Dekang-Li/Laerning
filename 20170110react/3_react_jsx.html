@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+<style type="text/css">
+.red{
+	color: red;
+}	
+</style>
+</head>
+<body>
+<div id="box"></div>	
+<script src="js/react.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/react-dom.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/browser.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/babel">
+	/*
+		1.引入3个js库 
+			react、react-dom、browser
+			
+		2.创建组件（type="text/babel"）
+			
+		3.插入
+			ReactDOM.render(
+				组件,
+				显示在哪个元素中,
+				渲染完成的回调函数
+			)
+			
+		jsx语法 -> js + xml
+	*/
+	
+//	ReactDOM.render(
+//		<div className="red">
+//			你好!世界! 
+//		</div>,
+//		document.getElementById('box')
+//	);
+	
+	//创建组件开头一定要大写
+	
+	var H1 = React.createClass({
+		//key:render  val:function
+		render:function(){
+			return (
+				<div className="red">
+					你好,世界!
+				</div>
+			)
+		}
+	})
+	
+	ReactDOM.render(
+		<H1 />,
+		document.getElementById('box')
+	)
+	
+	
+	
+	
+	
+</script>
+</body>
+</html>
