@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+<style type="text/css">
+.red{
+	width:100px;
+	height: 100px;
+	background: red;
+}	
+</style>
+</head>
+<body>
+<div id="box">
+	
+</div>
+<script src="js/react.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/react-dom.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/browser.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/babel">
+	
+	var Input = React.createClass({
+		componentWillMount:function(){
+			//渲染之前
+			alert(1)
+		},
+		componentDidMount:function(){
+			//渲染之后
+			alert(2)
+		},
+		getInitialState:function(){
+			return {
+				v:''
+			}
+		},
+		change:function(ev){
+			//使用原生的event对象 ->ev.nativeEvent
+			console.log(ev.target.value);
+			this.setState({
+				v:ev.target.value
+			})
+			
+		},
+		render:function(){
+			return (
+				<div>
+					<input type="text" value={this.state.v} onChange={this.change} placeholder="请输入内容"/>
+				<span>{this.state.v}</span>		
+			
+				</div>
+			)
+		}
+	})
+	
+	ReactDOM.render(
+		<Input />,
+		document.getElementById('box')
+	)
+	
+</script>
+</body>
+</html>

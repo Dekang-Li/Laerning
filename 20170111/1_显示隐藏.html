@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+<style type="text/css">
+.red{
+	width:100px;
+	height: 100px;
+	background: red;
+}	
+</style>
+</head>
+<body>
+<div id="box">
+	
+</div>
+<script src="js/react.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/react-dom.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/browser.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/babel">
+	/*
+		表单元素如何写value={},那么一定要加上onChange事件，不然会报错，如果使用value
+		改变value中的值，需要改变状态值。
+		
+	*/
+	var Toggle = React.createClass({
+		getInitialState:function(){
+			return {
+				//2个组件的父级定义一个开关，保证这2个组件都能使用这个状态
+				onOff:true
+			}
+		},
+		render:function(){
+			//把状态传入到子组件中，一遍子组件使用
+			return (
+				<div>
+					<Btn on={this.state.onOff} that={this}/>
+					<Div on={this.state.onOff}/>
+				</div>
+			)
+		}
+	})
+	
+	var Btn = React.createClass({
+		clickFn:function(){
+			//点击按钮的时候更改父组件的开关状态
+			this.props.that.setState({
+				onOff:!this.props.on
+			})
+			
+			console.log(this.props.on)
+		},
+		/*change:function(){
+			
+		},*/
+		render:function(){
+			//通过状态的变化控制value的值
+			var v = this.props.on?'显示':'隐藏'
+			return (
+				<input type="button" value={v} onClick={this.clickFn} onChange={this.change}/>
+			)
+		}
+	})
+	
+	var Div = React.createClass({
+		render:function(){
+			//因为当某个状态发生改变的时候，React都会去检查组件,会将使用这个状态的组件发生变化。
+			
+			//修改样式，注意的是:在style中等于一个{{}}
+			var styleObj = {
+				display:this.props.on?'block':'none',
+				fontSize:'16px'
+			}
+			return (
+				<div className="red" style={styleObj}></div>
+			)
+		}
+	})
+	
+	ReactDOM.render(
+		<Toggle />,
+		document.getElementById('box')
+	)
+	
+</script>
+</body>
+</html>
